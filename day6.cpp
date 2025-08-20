@@ -13,7 +13,6 @@ vector<pair<int, int>> findZeroSumSubarrays(vector<int>& arr) {
     for (int i = 0; i < n; i++) {
         prefixSum += arr[i];
 
-        // Case 1: prefix sum itself is 0 -> subarray (0..i)
         if (prefixSum == 0) {
             result.push_back({0, i});
         }
@@ -45,3 +44,4 @@ int main() {
 
     return 0;
 }
+
